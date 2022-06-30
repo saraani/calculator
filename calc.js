@@ -1,18 +1,22 @@
 //1. display number in text box
-function displayNum(num){
-result.value+=num
+function displayNum(num){  //vie (num) OR displayNum(num)  // one argument
+result.value+=num  // 111   222   333   etc .  => concantination  // to get more than one single digit
 }
 
-//2. clear text box
+//2. clear text box => to make text box empty => AC
 
-function clearBox(){
-    result.value=""
+function clearBox(){ //No arguments
+    result.value=""   // empty string ""
 }
 
 //3. evaluate expression
 
 function evaluateExpr(){
-    result.value = eval(result.value)
+    // expr= result.value
+    //output = eval(expr)
+    //result.value = output
+    //     OR
+    result.value = eval(result.value)  // this single step is enough
 
 }
 
