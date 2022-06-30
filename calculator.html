@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="row mt-5 w-100">
+        <div class="col-4"></div>
+        <!-- calculator display screen  -->
+        <div class="col-4 lg-md-auto border border-dark text-center  w-25">
+            <input type="text" id="result" placeholder="0" class="form-control mt-5 w-75 ms-5 container-fluid" style="text-align-last: right;  ">
+            <!-- calculator buttons -->
+            <div class="row mt-3 w-100 ">
+                <div class="col-3"><button type="button"  id="one"  class="btn btn-dark" onclick="displayNum(1)">1</button></div>
+                <div class="col-3"><button type="button" class="btn btn-dark" id="two" onclick="displayNum(2)">2</button></div>
+                <div class="col-3"><button type="button" class="btn btn-dark" id="three" onclick="displayNum(3)">3</button></div>
+                <div class="col-3"><button type="button" class="btn btn-dark" id="plus" onclick="displayNum('+')">+</button></div>
+            </div>
+            <div class="row mt-2 w-100">
+                <div class="col-3"> <button type="button" class="btn btn-dark" id="four" onclick="displayNum(4)">4</button></div>
+                <div class="col-3"><button type="button" class="btn btn-dark" id="five" onclick="displayNum(5)">5</button></div>
+                <div class="col-3"><button type="button" class="btn btn-dark" id="six" onclick="displayNum(6)">6</button></div>
+                <div class="col-3"><button type="button" class="btn btn-dark" id="mines" onclick="displayNum('-')">-</button></div>
+            </div>
+            <div class="row mt-2 w-100">
+                <div class="col-3"><button type="button" class="btn btn-dark" id="seven" onclick="displayNum(7)">7</button></div>
+                <div class="col-3"><button type="button" class="btn btn-dark" id="eight" onclick="displayNum(8)">8</button></div>
+                <div class="col-3"><button type="button" class="btn btn-dark" id="nine" onclick="displayNum(9)">9</button></div>
+                <div class="col-3"><button type="button" class="btn btn-dark" id="mult" onclick="displayNum('*')">*</button></div>
+            </div>
+            <div class="row mt-2 mb-3 w-100">
+                <div class="col-3"><button type="button" class="btn btn-dark" id="zero" onclick="displayNum(0)">0</button></div>
+                <div class="col-3"><button type="button" class="btn btn-dark" id="clear" onclick="clearBox()">AC</button></div>
+                <div class="col-3"><button type="button" class="btn btn-dark" id="equal" onclick="evaluateExpr()">&#61;</button></div>
+                <div class="col-3"><button type="button" class="btn btn-dark" id="divid" onclick="displayNum('/')">&#247;</button></div>
+            </div>
+            <div class="row mt-2 mb-3 w-100">
+                <div class="col-3"><button type="button" class="btn btn-dark" id="delet" onclick="removeItem()">&#9003;</button></div>
+            </div>
+
+        </div>
+        <div class="col-4"></div>
+    </div>
+</body>
+<script src="calc.js"></script>
+</html>
